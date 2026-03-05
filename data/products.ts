@@ -58,35 +58,35 @@ export const products: Product[] = [
         }
     },
     {
-        id: "chocolate",
-        name: "Dutch Chocolate",
-        subName: "Velvety smooth.",
+        id: "original",
+        name: "Monster Original",
+        subName: "Unleash the Beast.",
         price: "₹140",
-        description: "Premium Cocoa - Almond Milk base - Plant Protein",
-        folderPath: "/images/chocolate",
-        themeColor: "#8D6E63",
-        gradient: "linear-gradient(135deg, #8D6E63 0%, #5D4037 100%)",
-        features: ["Premium Cocoa", "Almond Milk", "Plant Protein"],
-        stats: [{ label: "Dairy", val: "0%" }, { label: "Protein", val: "12g" }, { label: "Cocoa", val: "100%" }],
-        section1: { title: "Dutch Chocolate.", subtitle: "Velvety smooth." },
-        section2: { title: "Decadence redefined.", subtitle: "Rich, dark cocoa blended with creamy almond milk for a guilt-free treat." },
-        section3: { title: "Plant-powered energy.", subtitle: "Loaded with natural plant protein to fuel your active lifestyle." },
-        section4: { title: "Indulgence without compromise.", subtitle: "" },
+        description: "Classic Energy - Taurine Blend - B-Vitamins",
+        folderPath: "/images/original",
+        themeColor: "#4CAF50",
+        gradient: "linear-gradient(135deg, #1B5E20 0%, #4CAF50 100%)",
+        features: ["Classic Energy", "Taurine Blend", "B-Vitamins"],
+        stats: [{ label: "Energy", val: "100%" }, { label: "Taurine", val: "2000mg" }, { label: "Caffeine", val: "160mg" }],
+        section1: { title: "Monster Original.", subtitle: "The one that started it all." },
+        section2: { title: "Tear into a can.", subtitle: "A smooth, easy drinking flavor packed with the ideal combo of the right ingredients in the right proportion." },
+        section3: { title: "Unleash the Beast.", subtitle: "Delivering the big, bad Monster buzz you know and love." },
+        section4: { title: "Pure adrenaline.", subtitle: "" },
         detailsSection: {
-            title: "Ethically Sourced Cocoa",
-            description: "We source our cocoa from sustainable farms in Ghana, ensuring fair wages and premium quality. Blended with our house-made almond milk, this drink offers a silky texture that rivals traditional dairy shakes, but with zero cholesterol and 100% plant-based goodness.",
-            imageAlt: "Chocolate Details"
+            title: "Classic Green Energy",
+            description: "Our signature original blend delivers a powerful punch with a smooth, unmistakable flavor. Formulated with our proprietary Monster Energy blend of Taurine, Ginseng, L-Carnitine, and B-Vitamins.",
+            imageAlt: "Original Details"
         },
         freshnessSection: {
-            title: "Cold-Crafted Perfection",
-            description: "Heat destroys delicate cocoa flavonoids. That's why we mix our Dutch Chocolate cold. Our almond milk is pressed fresh daily, never stored. The result is a clean, robust chocolate flavor that feels heavy on the tongue but light on the stomach."
+            title: "Peak Performance",
+            description: "We don't hold back. Our Original blend is crafted to deliver maximum energy when you need it most. Whether you're hitting the gym, gaming late, or just need to crush your day, this is the fuel."
         },
         buyNowSection: {
             price: "₹140",
-            unit: "per 300ml bottle",
-            processingParams: ["Plant Based", "Cold Blended", "Dairy Free"],
-            deliveryPromise: "Shipped in insulated eco-friendly coolers. Keeps perfectly cold for 48 hours.",
-            returnPolicy: "Taste the difference or get your money back."
+            unit: "per 500ml can",
+            processingParams: ["Max Energy", "Classic Taste", "Zero Compromise"],
+            deliveryPromise: "Shipped fast so you never run out of fuel.",
+            returnPolicy: "Not fully energized? We'll make it right."
         }
     },
     {
