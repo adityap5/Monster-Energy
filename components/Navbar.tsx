@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import { Banana } from "lucide-react";
+import { Banana, Menu } from "lucide-react";
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -16,8 +16,10 @@ export default function Navbar() {
     }, []);
 
     return (
-        <motion.header
-            className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white/10 backdrop-blur-xl border-b border-white/20 py-4 shadow-lg" : "bg-transparent py-6"
+        <motion.nav
+            className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${scrolled
+                ? "bg-glass border-b border-white/10 shadow-2xl py-4"
+                : "bg-transparent py-6"
                 }`}
             initial={{ y: -100 }}
             animate={{ y: 0 }}
@@ -31,17 +33,19 @@ export default function Navbar() {
                     </h1>
                 </div>
 
-                <nav className="hidden md:flex items-center gap-8 font-medium text-white/90">
-                    <a href="#" className="hover:text-orange-400 transition-colors duration-300">Shop</a>
-                    <a href="#" className="hover:text-orange-400 transition-colors duration-300">About</a>
-                    <a href="#" className="hover:text-orange-400 transition-colors duration-300">Process</a>
-                </nav>
+                <div className="flex items-center gap-6"> {/* New wrapper div */}
+                    <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-white/70"> {/* Updated nav element */}
+                        <a href="#" className="hover:text-white transition-colors">Shop</a>
+                        <a href="#" className="hover:text-white transition-colors">Story</a> {/* Changed 'About' to 'Story' */}
+                        <a href="#" className="hover:text-white transition-colors">Impact</a> {/* Changed 'Process' to 'Impact' */}
+                    </nav>
 
-                <button className="relative overflow-hidden group bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(249,115,22,0.4)] hover:shadow-[0_0_30px_rgba(249,115,22,0.8)]">
-                    <span className="relative z-10">Order Now</span>
-                    <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
-                </button>
+                    <button className="glow-effect hover-glow px-6 py-2.5 bg-white text-black text-sm font-bold rounded-full hover:scale-105 transition-transform shadow-[0_0_20px_rgba(255,255,255,0.3)]"> {/* Updated button className and content */}
+                        Order Now
+                    </button>
+                    <button className="md:hidden text-white"><Menu /></button> {/* Added new button */}
+                </div>
             </div>
-        </motion.header>
+        </motion.nav>
     );
 }

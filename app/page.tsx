@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
@@ -39,7 +40,7 @@ export default function Home() {
             </button>
 
             {/* Fixed Bottom Menu */}
-            <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex gap-2 md:gap-4 p-2 bg-black/40 backdrop-blur-xl rounded-full border border-white/10 shadow-2xl">
+            <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 flex gap-2 md:gap-4 p-2 bg-glass border-glass rounded-full shadow-2xl">
                 {products.map((p, idx: number) => (
                     <button
                         key={p.id}
@@ -94,9 +95,15 @@ export default function Home() {
                                     </div>
                                 </div>
 
-                                <div className="relative h-[600px] rounded-3xl overflow-hidden border border-white/10 bg-gradient-to-br from-white/5 to-transparent flex items-center justify-center p-12">
-                                    <span className="text-white/20">Thematic Image/Visual Here</span>
-                                    {/* The prompt mentioned manual addition, we'll leave a styled placeholder */}
+                                <div className="relative h-[600px] rounded-3xl overflow-hidden bg-glass border-glass flex items-center justify-center glow-effect hover-glow" style={{ boxShadow: `0 0 60px ${product.glowColor}` }}>
+                                    <Image
+                                        src={`${product.folderPath}/120.webp`}
+                                        alt={product.detailsSection.imageAlt}
+                                        fill
+                                        sizes="(max-width: 768px) 100vw, 50vw"
+                                        className="object-cover"
+                                        priority
+                                    />
                                 </div>
                             </motion.div>
                         </div>
@@ -121,7 +128,7 @@ export default function Home() {
 
                     {/* Buy Now Section */}
                     <section className="relative z-20 py-32 px-6 md:px-20" style={{ background: product.gradient }}>
-                        <div className="container mx-auto max-w-6xl block md:flex items-center justify-between gap-12 bg-black/40 backdrop-blur-xl p-12 md:p-20 rounded-[3rem] shadow-2xl border border-white/20">
+                        <div className="container mx-auto max-w-6xl block md:flex items-center justify-between gap-12 bg-glass border-glass p-12 md:p-20 rounded-[3rem]" style={{ boxShadow: `0 20px 80px ${product.glowColor}` }}>
                             <motion.div
                                 initial={{ opacity: 0, x: -50 }}
                                 whileInView={{ opacity: 1, x: 0 }}
@@ -143,7 +150,7 @@ export default function Home() {
                                     <span className="text-xl opacity-80 pb-2">{product.buyNowSection.unit}</span>
                                 </div>
 
-                                <button className="w-full md:w-auto px-12 py-5 bg-white text-black text-xl font-bold rounded-full hover:scale-105 transition-transform shadow-xl flex items-center justify-center gap-4">
+                                <button className="w-full md:w-auto px-12 py-5 bg-white text-black text-xl font-bold rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-4 glow-effect hover-glow" style={{ boxShadow: `0 0 30px ${product.glowColor}` }}>
                                     Add to Cart <ArrowRight />
                                 </button>
                             </motion.div>
@@ -153,7 +160,7 @@ export default function Home() {
                                 whileInView={{ opacity: 1, x: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.8, delay: 0.2 }}
-                                className="flex-1 bg-white/10 p-8 rounded-3xl"
+                                className="flex-1 bg-white/5 border border-white/10 p-8 rounded-3xl backdrop-blur-md"
                             >
                                 <h4 className="text-xl font-bold mb-4 text-white">Delivery Promise</h4>
                                 <p className="text-white/80 mb-8">{product.buyNowSection.deliveryPromise}</p>

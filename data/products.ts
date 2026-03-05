@@ -7,6 +7,7 @@ export interface Product {
     folderPath: string;
     themeColor: string;
     gradient: string;
+    glowColor: string;
     features: string[];
     stats: { label: string; val: string }[];
     section1: { title: string; subtitle: string };
@@ -33,7 +34,8 @@ export const products: Product[] = [
         description: "Rich in Vitamin C - No preservatives - 100% fruit",
         folderPath: "/images/mango",
         themeColor: "#FFB74D",
-        gradient: "linear-gradient(135deg, #FFB74D 0%, #FFA726 100%)",
+        gradient: "linear-gradient(135deg, #FFB74D 0%, #FF9800 50%, #F57C00 100%)",
+        glowColor: "rgba(255, 152, 0, 0.4)",
         features: ["Rich in Vitamin C", "No preservatives", "100% fruit"],
         stats: [{ label: "Sugar", val: "0g" }, { label: "Water", val: "0%" }, { label: "Pulp", val: "100%" }],
         section1: { title: "Cream Mango.", subtitle: "Pure sunshine." },
@@ -65,7 +67,8 @@ export const products: Product[] = [
         description: "Classic Energy - Taurine Blend - B-Vitamins",
         folderPath: "/images/original",
         themeColor: "#4CAF50",
-        gradient: "linear-gradient(135deg, #1B5E20 0%, #4CAF50 100%)",
+        gradient: "linear-gradient(135deg, #4CAF50 0%, #2E7D32 50%, #1B5E20 100%)",
+        glowColor: "rgba(76, 175, 80, 0.4)",
         features: ["Classic Energy", "Taurine Blend", "B-Vitamins"],
         stats: [{ label: "Energy", val: "100%" }, { label: "Taurine", val: "2000mg" }, { label: "Caffeine", val: "160mg" }],
         section1: { title: "Monster Original.", subtitle: "The one that started it all." },
@@ -97,7 +100,8 @@ export const products: Product[] = [
         description: "Bold Energy - Cold Pressed - Refreshing Tang",
         folderPath: "/images/grapefruit",
         themeColor: "#FF5252",
-        gradient: "linear-gradient(135deg, #FF5252 0%, #D32F2F 100%)",
+        gradient: "linear-gradient(135deg, #FF5252 0%, #E53935 50%, #B71C1C 100%)",
+        glowColor: "rgba(229, 57, 53, 0.4)",
         features: ["Bold Energy", "Cold Pressed", "Refreshing Tang"],
         stats: [{ label: "Additives", val: "0%" }, { label: "Vitamins", val: "B,C,E" }, { label: "Purity", val: "100%" }],
         section1: { title: "Ruby Grapefruit.", subtitle: "Nature's spark." },
