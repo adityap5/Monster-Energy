@@ -27,7 +27,7 @@ export default function Footer() {
                         <h3 className="text-white font-semibold mb-6">Shop Links</h3>
                         <ul className="space-y-3 text-sm">
                             <li><a href="#" className="hover:text-orange-400 transition-colors">Cream Mango</a></li>
-                            <li><a href="#" className="hover:text-orange-400 transition-colors">Dutch Chocolate</a></li>
+                            <li><a href="#" className="hover:text-green-400 transition-colors">Original</a></li>
                             <li><a href="#" className="hover:text-green-400 transition-colors">Ruby Grapefruit</a></li>
                             <li><a href="#" className="hover:text-orange-400 transition-colors">All Products</a></li>
                         </ul>

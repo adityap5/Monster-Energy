@@ -1,8 +1,8 @@
 const fs = require('fs');
 const path = require('path');
 
-const sourceDir = path.join(__dirname, '../grapeframes');
-const targetDir = path.join(__dirname, '../public/images/grapefruit');
+const sourceDir = path.join(__dirname, '../originalframes');
+const targetDir = path.join(__dirname, '../public/images/original');
 
 if (!fs.existsSync(targetDir)) {
     fs.mkdirSync(targetDir, { recursive: true });
@@ -19,11 +19,11 @@ if (fs.existsSync(sourceDir)) {
         if (sourceFile) {
             fs.copyFileSync(
                 path.join(sourceDir, sourceFile),
-                path.join(targetDir, `${i + 1}.webp`) // Keeping as .webp output for the component
+                path.join(targetDir, `${i + 1}.webp`)
             );
         }
     }
-    console.log(`Copied and rescaled ${files.length} frames down to ${totalFrames} frames for Grapefruit.`);
+    console.log(`Copied and rescaled ${files.length} frames down to ${totalFrames} frames for Original.`);
 } else {
-    console.log('grapeframes directory not found. Skipping grapefruit image preparation.');
+    console.log('originalframes directory not found. Skipping Original image preparation.');
 }
