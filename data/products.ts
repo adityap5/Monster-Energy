@@ -42,12 +42,12 @@ export const products: Product[] = [
         section4: { title: "Made from fruit, not concentrate.", subtitle: "" },
         detailsSection: {
             title: "The Monster of Fruits",
-            description: "Our Cream Mango juice uses only the finest Alphonso mangoes. Known for their rich sweetness and vibrant color, these mangoes are cold-pressed within hours of harvest to preserve every drop of nutrient-rich goodness. It's not just juice; it's a liquid gold experience.",
+            description: "Our Cream Mango blend uses only the finest Alphonso mangoes. Known for their rich sweetness and vibrant color, these mangoes are cold-pressed within hours of harvest to preserve every drop of nutrient-rich goodness. It's not just a drink; it's a liquid gold experience.",
             imageAlt: "Mango Details"
         },
         freshnessSection: {
             title: "Farm to Bottle",
-            description: "We believe in absolute transparency. From the orchard to the bottle, our process is designed to minimize oxidation and maximize flavor. HPP (High Pressure Processing) ensures that our juice stays safe and fresh without any heat treatment, keeping the vital enzymes and vitamins intact."
+            description: "We believe in absolute transparency. From the orchard to the bottle, our process is designed to minimize oxidation and maximize flavor. HPP (High Pressure Processing) ensures that our drink stays safe and fresh without any heat treatment, keeping the vital enzymes and vitamins intact."
         },
         buyNowSection: {
             price: "₹120",
@@ -90,28 +90,28 @@ export const products: Product[] = [
         }
     },
     {
-        id: "pomegranate",
-        name: "Ruby Pomegranate",
-        subName: "Antioxidant powerhouse.",
+        id: "grapefruit",
+        name: "Ruby Grapefruit",
+        subName: "Citrus powerhouse.",
         price: "₹150",
-        description: "Heart Healthy - Cold Pressed - Immunity Booster",
-        folderPath: "/images/pomegranate",
-        themeColor: "#E57373",
-        gradient: "linear-gradient(135deg, #E57373 0%, #C62828 100%)",
-        features: ["Heart Healthy", "Cold Pressed", "Immunity Booster"],
-        stats: [{ label: "Additives", val: "0%" }, { label: "Vitamins", val: "A,C,K" }, { label: "Purity", val: "100%" }],
-        section1: { title: "Ruby Pomegranate.", subtitle: "Nature's jewel." },
-        section2: { title: "Explosion of flavor.", subtitle: "Freshly pressed pomegranate arils delivering a tart and sweet sensation." },
-        section3: { title: "Heart healthy goodness.", subtitle: "Packed with powerful antioxidants to protect and rejuvenate." },
-        section4: { title: "Pure juice, pure life.", subtitle: "" },
+        description: "Bold Energy - Cold Pressed - Refreshing Tang",
+        folderPath: "/images/grapefruit",
+        themeColor: "#FF5252",
+        gradient: "linear-gradient(135deg, #FF5252 0%, #D32F2F 100%)",
+        features: ["Bold Energy", "Cold Pressed", "Refreshing Tang"],
+        stats: [{ label: "Additives", val: "0%" }, { label: "Vitamins", val: "B,C,E" }, { label: "Purity", val: "100%" }],
+        section1: { title: "Ruby Grapefruit.", subtitle: "Nature's spark." },
+        section2: { title: "Explosion of flavor.", subtitle: "Freshly pressed grapefruit delivering a bold and electrifying sensation." },
+        section3: { title: "Unstoppable energy.", subtitle: "Packed with powerful citrus to protect and rejuvenate your day." },
+        section4: { title: "Pure energy, pure life.", subtitle: "" },
         detailsSection: {
             title: "The Ruby Elixir",
-            description: "Each bottle contains the juice of over 1 kg of premium pomegranates. We use a gentle pressing method to extract the juice from the arils without crushing the bitter pith. This results in a sweet, complex flavor profile that is unmatched by commercial concentrates.",
-            imageAlt: "Pomegranate Details"
+            description: "Each can contains the essence of premium grapefruits. We use a gentle pressing method to extract the flavor without crushing the bitter pith. This results in a sweet, complex, and electric profile.",
+            imageAlt: "Grapefruit Details"
         },
         freshnessSection: {
             title: "Potent Preservation",
-            description: "Pomegranate juice is highly sensitive to light and air. Our bottling line is designed to shield the juice from oxidation at every step. We bottle immediately after pressing to lock in the vibrant color and the potent punicalagins—unique antioxidants found only in pomegranate."
+            description: "Grapefruit vitality is highly sensitive to light and air. Our bottling line is designed to shield the drink from oxidation at every step. We bottle immediately after pressing to lock in the vibrant color and potent citrus kick."
         },
         buyNowSection: {
             price: "₹150",

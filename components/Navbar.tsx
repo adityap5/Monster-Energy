@@ -26,8 +26,8 @@ export default function Navbar() {
             <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
                 <div className="flex items-center gap-2 cursor-pointer group">
                     <Banana className="w-8 h-8 text-orange-400 group-hover:text-pink-400 transition-colors duration-300" />
-                    <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-pink-500 tracking-tight">
-                        Nano Banana
+                    <h1 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600 tracking-tight">
+                        Monster Energy
                     </h1>
                 </div>
 

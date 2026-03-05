@@ -7,8 +7,8 @@ import Footer from "@/components/Footer";
 const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-    title: "Monster | Future of Freshness",
-    description: "Premium Scrollytelling e-commerce for Nano Banana juice.",
+    title: "Monster Energy | Future of Energy",
+    description: "Premium Scrollytelling e-commerce for Monster Energy.",
 };
 
 export default function RootLayout({

@@ -9,11 +9,11 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
                     {/* Brand */}
                     <div className="space-y-4">
-                        <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-400 to-pink-500">
-                            Nano Banana
+                        <h2 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-green-600">
+                            Monster Energy
                         </h2>
                         <p className="text-sm text-gray-500 max-w-xs">
-                            The future of freshness. Cold-pressed, 100% natural juices delivered straight to your door.
+                            The future of energy. Bold, 100% turbocharged energy drinks delivered straight to your door.
                         </p>
                         <div className="flex gap-4 pt-2">
                             <a href="#" className="text-gray-500 hover:text-orange-400 transition-colors"><Instagram className="w-5 h-5" /></a>
@@ -28,7 +28,7 @@ export default function Footer() {
                         <ul className="space-y-3 text-sm">
                             <li><a href="#" className="hover:text-orange-400 transition-colors">Cream Mango</a></li>
                             <li><a href="#" className="hover:text-orange-400 transition-colors">Dutch Chocolate</a></li>
-                            <li><a href="#" className="hover:text-orange-400 transition-colors">Ruby Pomegranate</a></li>
+                            <li><a href="#" className="hover:text-green-400 transition-colors">Ruby Grapefruit</a></li>
                             <li><a href="#" className="hover:text-orange-400 transition-colors">All Products</a></li>
                         </ul>
                     </div>
@@ -65,7 +65,7 @@ export default function Footer() {
                 </div>
 
                 <div className="mt-16 pt-8 border-t border-gray-800 text-center text-sm text-gray-600">
-                    <p>&copy; {new Date().getFullYear()} Nano Banana. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Monster Energy. All rights reserved.</p>
                 </div>
             </div>
         </footer>
