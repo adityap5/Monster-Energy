@@ -68,7 +68,7 @@ export default function Home() {
                     <ProductBottleScroll product={product} />
 
                     {/* Product Details Section */}
-                    <section className="relative z-20 bg-black/80 backdrop-blur-3xl py-32 px-6 md:px-20 border-t border-white/10">
+                    <section className="relative z-20 py-32 px-6 md:px-20" style={{ background: 'var(--surface)', borderTop: '1px solid var(--border)' }}>
                         <div className="container mx-auto max-w-6xl">
                             <motion.div
                                 initial={{ opacity: 0, y: 50 }}
@@ -87,9 +87,9 @@ export default function Home() {
 
                                     <div className="grid grid-cols-3 gap-6">
                                         {product.stats.map((stat, idx: number) => (
-                                            <div key={idx} className="border-l-2 border-white/20 pl-4">
-                                                <div className="text-3xl font-bold text-white mb-1">{stat.val}</div>
-                                                <div className="text-sm text-white/50 uppercase tracking-widest">{stat.label}</div>
+                                            <div key={idx} className="pl-4" style={{ borderLeft: `2px solid ${product.themeColor}` }}>
+                                                <div className="text-3xl font-bold mb-1" style={{ color: product.themeColor }}>{stat.val}</div>
+                                                <div className="text-xs text-white/40 uppercase tracking-widest font-semibold">{stat.label}</div>
                                             </div>
                                         ))}
                                     </div>
@@ -110,7 +110,7 @@ export default function Home() {
                     </section>
 
                     {/* Freshness Section */}
-                    <section className="relative z-20 bg-gray-900 py-32 px-6 md:px-20">
+                    <section className="relative z-20 py-32 px-6 md:px-20" style={{ background: 'var(--surface-2)' }}>
                         <div className="container mx-auto max-w-4xl text-center">
                             <motion.div
                                 initial={{ opacity: 0, y: 50 }}
@@ -118,8 +118,11 @@ export default function Home() {
                                 viewport={{ once: true, margin: "-100px" }}
                                 transition={{ duration: 0.8 }}
                             >
-                                <h3 className="text-3xl md:text-5xl font-bold mb-8">{product.freshnessSection.title}</h3>
-                                <p className="text-xl md:text-2xl text-gray-400 leading-relaxed font-light">
+                                <h3
+                                    className="text-3xl md:text-5xl font-bold mb-8 text-premium"
+                                    style={{ backgroundImage: product.gradient }}
+                                >{product.freshnessSection.title}</h3>
+                                <p className="text-xl md:text-2xl leading-relaxed font-light" style={{ color: 'rgba(255,255,255,0.55)' }}>
                                     {product.freshnessSection.description}
                                 </p>
                             </motion.div>
@@ -172,18 +175,19 @@ export default function Home() {
                     </section>
 
                     {/* Next Flavor Button */}
-                    <section className="relative z-20 py-20 px-6 bg-black flex justify-center">
+                    <section className="relative z-20 py-20 px-6 flex justify-center" style={{ background: 'var(--background)' }}>
                         <motion.button
                             onClick={nextProduct}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="group px-16 py-8 bg-white/5 border border-white/10 rounded-tl-3xl rounded-br-3xl hover:bg-white/10 transition-colors flex items-center gap-6"
+                            whileHover={{ scale: 1.04, y: -4 }}
+                            whileTap={{ scale: 0.97 }}
+                            className="group px-16 py-8 bg-glass border-glass rounded-2xl transition-all flex items-center gap-8 glow-effect hover-glow"
+                            style={{ boxShadow: `0 0 40px ${product.glowColor}` }}
                         >
                             <div className="text-left">
-                                <div className="text-white/50 text-sm uppercase tracking-widest mb-2">Continue the journey</div>
-                                <div className="text-3xl text-white font-bold">Try Next Flavor</div>
+                                <div className="text-xs uppercase tracking-[0.3em] mb-2" style={{ color: product.themeColor }}>Continue the journey</div>
+                                <div className="text-3xl text-white font-bold tracking-tight">Try Next Flavor</div>
                             </div>
-                            <ArrowRight className="w-10 h-10 text-white group-hover:translate-x-2 transition-transform" />
+                            <ArrowRight className="w-10 h-10 transition-transform group-hover:translate-x-2" style={{ color: product.themeColor }} />
                         </motion.button>
                     </section>
 

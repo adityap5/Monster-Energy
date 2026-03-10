@@ -65,16 +65,19 @@ export default function ProductBottleScroll({ product }: ProductBottleScrollProp
             );
 
             const img = imagesRef.current[frameIndex];
+            // Always fill with black first
+            context.fillStyle = "#000000";
+            context.fillRect(0, 0, canvas.width, canvas.height);
+
             if (img && img.complete && img.naturalHeight !== 0) {
+                // "cover" mode: fill the entire canvas
                 const hRatio = canvas.width / img.width;
                 const vRatio = canvas.height / img.height;
-                // Keep the bottle fully contained
-                const ratio = Math.min(hRatio, vRatio) * 0.9;
+                const ratio = Math.max(hRatio, vRatio);
 
                 const centerShift_x = (canvas.width - img.width * ratio) / 2;
                 const centerShift_y = (canvas.height - img.height * ratio) / 2;
 
-                context.clearRect(0, 0, canvas.width, canvas.height);
                 context.drawImage(img, 0, 0, img.width, img.height,
                     centerShift_x, centerShift_y, img.width * ratio, img.height * ratio);
             }

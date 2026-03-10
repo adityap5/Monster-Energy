@@ -27,39 +27,6 @@ export interface Product {
 
 export const products: Product[] = [
     {
-        id: "mango",
-        name: "Cream Mango",
-        subName: "Pure sunshine.",
-        price: "₹120",
-        description: "Rich in Vitamin C - No preservatives - 100% fruit",
-        folderPath: "/images/mango",
-        themeColor: "#FFB74D",
-        gradient: "linear-gradient(135deg, #FFB74D 0%, #FF9800 50%, #F57C00 100%)",
-        glowColor: "rgba(255, 152, 0, 0.4)",
-        features: ["Rich in Vitamin C", "No preservatives", "100% fruit"],
-        stats: [{ label: "Sugar", val: "0g" }, { label: "Water", val: "0%" }, { label: "Pulp", val: "100%" }],
-        section1: { title: "Cream Mango.", subtitle: "Pure sunshine." },
-        section2: { title: "Bursting with fresh mango.", subtitle: "Hand-picked Alphonso mangoes, perfectly ripened under the summer sun." },
-        section3: { title: "Vitamin-packed refreshment.", subtitle: "A natural energy boost that revitalizes your body and mind instantly." },
-        section4: { title: "Made from fruit, not concentrate.", subtitle: "" },
-        detailsSection: {
-            title: "The Monster of Fruits",
-            description: "Our Cream Mango blend uses only the finest Alphonso mangoes. Known for their rich sweetness and vibrant color, these mangoes are cold-pressed within hours of harvest to preserve every drop of nutrient-rich goodness. It's not just a drink; it's a liquid gold experience.",
-            imageAlt: "Mango Details"
-        },
-        freshnessSection: {
-            title: "Farm to Bottle",
-            description: "We believe in absolute transparency. From the orchard to the bottle, our process is designed to minimize oxidation and maximize flavor. HPP (High Pressure Processing) ensures that our drink stays safe and fresh without any heat treatment, keeping the vital enzymes and vitamins intact."
-        },
-        buyNowSection: {
-            price: "₹120",
-            unit: "per 300ml bottle",
-            processingParams: ["Cold Pressed", "Never Heated", "HPP Treated"],
-            deliveryPromise: "Next-day delivery available in metro cities. Chilled packaging ensures peak freshness.",
-            returnPolicy: "100% Satisfaction Guarantee. Not happy? We'll replace it, no questions asked."
-        }
-    },
-    {
         id: "original",
         name: "Monster Original",
         subName: "Unleash the Beast.",
@@ -90,6 +57,39 @@ export const products: Product[] = [
             processingParams: ["Max Energy", "Classic Taste", "Zero Compromise"],
             deliveryPromise: "Shipped fast so you never run out of fuel.",
             returnPolicy: "Not fully energized? We'll make it right."
+        }
+    },
+    {
+        id: "mango",
+        name: "Cream Mango",
+        subName: "Pure sunshine.",
+        price: "₹120",
+        description: "Rich in Vitamin C - No preservatives - 100% fruit",
+        folderPath: "/images/mango",
+        themeColor: "#FFB74D",
+        gradient: "linear-gradient(135deg, #FFB74D 0%, #FF9800 50%, #F57C00 100%)",
+        glowColor: "rgba(255, 152, 0, 0.4)",
+        features: ["Rich in Vitamin C", "No preservatives", "100% fruit"],
+        stats: [{ label: "Sugar", val: "0g" }, { label: "Water", val: "0%" }, { label: "Pulp", val: "100%" }],
+        section1: { title: "Cream Mango.", subtitle: "Pure sunshine." },
+        section2: { title: "Bursting with fresh mango.", subtitle: "Hand-picked Alphonso mangoes, perfectly ripened under the summer sun." },
+        section3: { title: "Vitamin-packed refreshment.", subtitle: "A natural energy boost that revitalizes your body and mind instantly." },
+        section4: { title: "Made from fruit, not concentrate.", subtitle: "" },
+        detailsSection: {
+            title: "The Monster of Fruits",
+            description: "Our Cream Mango blend uses only the finest Alphonso mangoes. Known for their rich sweetness and vibrant color, these mangoes are cold-pressed within hours of harvest to preserve every drop of nutrient-rich goodness. It's not just a drink; it's a liquid gold experience.",
+            imageAlt: "Mango Details"
+        },
+        freshnessSection: {
+            title: "Farm to Bottle",
+            description: "We believe in absolute transparency. From the orchard to the bottle, our process is designed to minimize oxidation and maximize flavor. HPP (High Pressure Processing) ensures that our drink stays safe and fresh without any heat treatment, keeping the vital enzymes and vitamins intact."
+        },
+        buyNowSection: {
+            price: "₹120",
+            unit: "per 300ml bottle",
+            processingParams: ["Cold Pressed", "Never Heated", "HPP Treated"],
+            deliveryPromise: "Next-day delivery available in metro cities. Chilled packaging ensures peak freshness.",
+            returnPolicy: "100% Satisfaction Guarantee. Not happy? We'll replace it, no questions asked."
         }
     },
     {

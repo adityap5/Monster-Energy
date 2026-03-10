@@ -18,7 +18,7 @@ export default function Navbar() {
     return (
         <motion.nav
             className={`fixed top-0 left-0 right-0 z-[100] transition-all duration-500 ${scrolled
-                ? "bg-glass border-b border-white/10 shadow-2xl py-4"
+                ? "bg-glass border-b border-white/[0.07] shadow-[0_4px_32px_rgba(0,0,0,0.8)] py-4"
                 : "bg-transparent py-6"
                 }`}
             initial={{ y: -100 }}
